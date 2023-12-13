@@ -2,6 +2,8 @@ const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 
 const divide = (arr, n) => {
   // Write your code here
+	// corner senerio
+	if(arr.length === 0) return [];
 	let trackingSum = 0, ans = [], subArr = [];
 	for(let i =0; i<arr.length; i++) {
 		if(trackingSum + arr[i] <= n) {
@@ -18,5 +20,5 @@ const divide = (arr, n) => {
 	return ans;
 };
 
-c
-	
+// const n = prompt("Enter n: ");
+// alert(JSON.stringify(divide(arr, n)));
